@@ -1,16 +1,16 @@
-package admin;
+package admin.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.ui.ModelMap;
+
 @Controller
 @RequestMapping("/admin")
-public class IndexController {
-    @RequestMapping(value = {"/","/index"})
+public class LoginController {
+    @RequestMapping("/login")
 
     public String index(ModelMap map){
-        map.addAttribute("message", "柯江涛");
-        return "admin/index/index";
-    }
 
+        return "admin/login/index";
+    }
 }

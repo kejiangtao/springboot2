@@ -16,10 +16,10 @@ $.ajaxSetup({
 /**
  * 后台侧边菜单选中状态
  */
+/*
 $('.layui-nav-item').find('a').removeClass('layui-this');
 $('.layui-nav-tree').find('a[href*="' + GV.current_controller + '"]').parent().addClass('layui-this').parents('.layui-nav-item').addClass('layui-nav-itemed');
-
-
+*/
 
 
 /**
@@ -32,7 +32,7 @@ $('.datetime').on('click', function () {
         format: 'YYYY-MM-DD hh:mm:ss'
     })
 });
-layui.use('element', function(){
+layui.use('element', function () {
     var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
 
 });
@@ -40,7 +40,7 @@ layui.use('element', function(){
 /**
  * 通用表单提交(AJAX方式)
  */
-layui.use('form', function(){
+layui.use('form', function () {
     var form = layui.form;
 
     //监听提交
